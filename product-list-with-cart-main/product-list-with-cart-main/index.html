@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="orderConfirmedBanner" style="display: none;">
+    <div class="orderComfirmedImg"><img src="./assets/images/icon-order-confirmed.svg" alt=""></div>
+    <div class="orderConfirmedText">
+      <h2>Order Confirmed</h2>
+      <h4>We hope you Enjoy the food</h4>
+    </div>
+    <div class="ordersInfo">
+      <!-- <div class="singleOrderInfo">
+        <div class="dishImg"><img width="100px" src=".\assets\images\image-panna-cotta-desktop.jpg" alt=""></div>
+        <div class="basicDishInfo">
+          <div class="dishName">Pannir coftha</div>
+          <div class="rateInfo">
+            <div class="noOfItems">5</div>
+            <div class="ratePerItem">5</div>
+          </div>
+        </div>
+        <div class="totalRateOfDish">25</div>
+      </div> -->
+    </div>
+    <div class="totalInfo">
+      <p>Order Total</p>
+      <div class="totalRate">0</div>
+    </div>
+    <div class="confirmOrderButton">Start New Order</div>
+  </div>
+  <main>
+    <article>
+      <h1>Desserts</h1>
+      <section>
+        <img src=".\assets\images\image-waffle-desktop.jpg"
+        srcset=".\assets\images\image-waffle-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Waffle with Berries</li>
+          <li>Waffle</li>
+          <li>6.50</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-creme-brulee-desktop.jpg"
+        srcset=".\assets\images\image-creme-brulee-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Vanilla Bean Crème Brûlée</li>
+          <li>Crème Brûlée</li>
+          <li>7.00</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-macaron-desktop.jpg"
+        srcset=".\assets\images\image-macaron-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Macaron Mix of Five</li>
+          <li>Macaron</li>
+          <li>8.00</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-tiramisu-desktop.jpg"
+        srcset=".\assets\images\image-tiramisu-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Classic Tiramisu</li>
+          <li>Tiramisu</li>
+          <li>5.50</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-baklava-desktop.jpg"
+        srcset=".\assets\images\image-baklava-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Pistachio Baklava</li>
+          <li>Baklava</li>
+          <li>4.00</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-meringue-desktop.jpg"
+        srcset=".\assets\images\image-meringue-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Lemon Meringue Pie</li>
+          <li>Pie</li>
+          <li>5.00</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-cake-desktop.jpg"
+        srcset=".\assets\images\image-cake-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Red Velvet Cake</li>
+          <li>Cake</li>
+          <li>4.50</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-brownie-desktop.jpg"
+        srcset=".\assets\images\image-brownie-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Salted Caramel Brownie</li>
+          <li>Brownie</li>
+          <li>4.50</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+      <section>
+        <img src=".\assets\images\image-panna-cotta-desktop.jpg"
+        srcset=".\assets\images\image-panna-cotta-mobile.jpg 640w" >
+        <div class="name-list">
+          <li>Vanilla Panna Cotta</li>
+          <li>Panna Cotta</li>
+          <li>6.50</li>
+        </div>
+        <div class="add-to-cart unselectable">
+          <img class="cart-icon" src=".\assets\images\icon-add-to-cart.svg">
+          <img style="display: none;" class="plus" src="./assets/images/icon-increment-quantity copy.svg">
+          <p>Add to Cart</p>
+          <img style="display: none;" class="minus" src="./assets/images/icon-decrement-quantity.svg">
+        </div>
+      </section>
+    </article>
+    <aside>
+      <div class="cart-details">
+        <h2>Your Cart (
+          <span class="totalItem">0</span>
+          )
+        </h2>
+        <div class="onlyIfEmpty">
+          <img class="emptyIllustration" src=".\assets\images\illustration-empty-cart.svg">
+          <p>Your added items will appear here</p>
+        </div>
+        <!-- <div class="ifOrderExist">
+          <div class="ordersInfo">
+            <div class="singleOrderInfo">
+              <div class="dishInfo">
+                <div class="dishName"></div>
+                <div class="rateInfo">
+                  <div class="noOfItems"></div>
+                  <div class="ratePerItem"></div>
+                  <div class="totalRateOfDish"></div>
+                </div>
+              </div>
+              <div class="cancelButton">
+                <img src="./assets/images/icon-remove-item.svg" alt="remove icon" srcset=" 640w" >
+              </div>
+              <div class="totalInfo"></div>
+              <div class="deliveryInfo"></div>
+              <div class="confirmOrderButton"></div>
+            </div> -->
+        <div style="display: none;" class="ifOrderExist">
+          <div class="ordersInfo">
+          </div>
+          <div class="totalInfo">
+            <p>Order Total</p>
+            <div class="totalRate"></div>
+          </div>
+          <div class="deliveryInfo">
+            <div class="deliveryLogo"><img src=".\assets\images\icon-carbon-neutral.svg" alt="" src:=""></div>
+            <p>This is a <b>carbon-neutral</b> delivery</p>
+          </div>
+          <div class="confirmOrderButton">Confirm Order</div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <!-- this is the banner of order confiramtion -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #f3e5d8;
+}
+.box{
+  background-color: white;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50vw;
+
+
+}
+img{
+  width:100%;
+  border-radius:10px 10px 0 0;
+}
+.rose{
+  background-color:  #fff5fa;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+.info{
+  border-top:solid 1px #8f848494 ;
+  border-bottom:solid 1px #8f848494;
+
+
+
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+td{
+  padding: 8px;
+  border: 1px solid #8f848494;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+td:nth-child(2){
+  color: brown;
+  font-weight:bold;
+}
+li:not(.rose li)::marker{
+  color: brown;
+  font-weight: bold;
+}
