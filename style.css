@@ -322,6 +322,11 @@ h2 {
 }
 
 @media (width<=640px) {
+   *{
+    -webkit-tap-highlight-color: transparent;
+    /* For non-WebKit browsers */
+    outline: none;
+}
     main{
         display: flex;
         flex-direction: column;
