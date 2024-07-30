@@ -38,13 +38,13 @@ Users should be able to:
 ![alt text](assets/screenshots/Desktop/orderConfirmed.png)
 ---
 ---
-<div style="display:flex ;align-items:flex-start;gap:5px">
-<img src="assets/screenshots/Mobile/emptyCart.png" width ="32%">
-
-<img src="assets/screenshots/Mobile/addedToCart.png" width ="32%">
-
-<img src="assets/screenshots/Mobile/orderConfirmed.png" width ="32%">
-</div>
+<table>
+  <tr>
+<td valign="top"><img src="assets/screenshots/Mobile/emptyCart.png" width ="100%"></td>
+<td valign="top"><img src="assets/screenshots/Mobile/addedToCart.png" width ="100%"></td>
+<td valign="top"><img src="assets/screenshots/Mobile/orderConfirmed.png" width ="100%"></td>
+</tr>
+</table>
 
 ### Links
 
