@@ -38,18 +38,20 @@ Users should be able to:
 ![alt text](assets/screenshots/Desktop/orderConfirmed.png)
 ---
 ---
+<div style="display:flex ;align-items:flex-start;gap:5px">
 <img src="assets/screenshots/Mobile/emptyCart.png" width ="32%">
 
 <img src="assets/screenshots/Mobile/addedToCart.png" width ="32%">
 
 <img src="assets/screenshots/Mobile/orderConfirmed.png" width ="32%">
+</div>
 
 ### Links
 
 - Solution URL: [Solution](https://github.com/Rai-shwith/FM-Challenge-Product-list-with-cart)
 - Live Site URL: [Live site](https://rai-shwith.github.io/FM-Challenge-Product-list-with-cart)
 
-## My process
+
 
 ### Built with
 
@@ -57,10 +59,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 Improved the knowledge of Grids in CSS
